@@ -1,10 +1,17 @@
-Fp101AbridgedClass
+FP-JS Class
 ==================
 
-101 Point free functional programming class (abridged)
+Functional Programming learned through JS
 
-Example of running tests:
+Presentation here: http://goo.gl/zovcux
 
-cd exercises/first_class 
-jasmine-node first_class_exercises_spec.js
+**Installation**:
+`npm install`
 
+**Example of running tests**:
+Tests are all located in their cooresponding folder so you must cd in to run.
+
+```
+cd exercises/curry
+mocha .
+```
