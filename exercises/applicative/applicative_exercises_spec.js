@@ -1,6 +1,6 @@
 var E = require('./applicative_exercises');
 var assert = require("chai").assert
-var Maybe = require('pointfree-fantasy/instances/Maybe');
+var Maybe = require('pointfree-fantasy/instances/maybe');
 var Identity = require('fantasy-identities');
 var Either = require('data.either');
 var _ = require('ramda');

@@ -1,6 +1,6 @@
 require('lambdajs').expose(global);
 require('pointfree-fantasy').expose(this);
-var Maybe = require('pointfree-fantasy/instances/Maybe');
+var Maybe = require('pointfree-fantasy/instances/maybe');
 var Identity = require('fantasy-identities');
 var Future = require('data.future');
 var Either = require('data.either');

@@ -1,6 +1,6 @@
 require('lambdajs').expose(global);
 require('pointfree-fantasy').expose(global);
-var Maybe = require('pointfree-fantasy/instances/Maybe');
+var Maybe = require('pointfree-fantasy/instances/maybe');
 var IO = require('../../lib/io');
 var Future = require('data.future');
 var _ = require('ramda');
