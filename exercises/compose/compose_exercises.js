@@ -46,7 +46,7 @@ var averageDollarValue = function(cars) {
 
 var _underscore = replace(/\W+/g, '_'); //<-- leave this alone and use to sanitize
 
-//+ sanitizeNames :: [Car] -> String
+//+ sanitizeNames :: [Car] -> [String]
 var sanitizeNames = undefined
 
 
