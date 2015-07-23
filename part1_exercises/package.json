@@ -1,11 +1,11 @@
 {
-  "name": "MAG_Part2_Exercises",
+  "name": "MAG_Part1_Exercises",
   "version": "0.0.1",
-  "description": "Exercises for Part 2 of the Book",
+  "description": "Exercises for Part 1 of the Book",
   "main": "index.js",
   "dependencies": {
+    "accounting": "^0.4.1",
     "chai": "^1.9.1",
-    "data.task": "^3.0.0",
     "ramda": "^0.13.0"
   },
   "devDependencies": {
