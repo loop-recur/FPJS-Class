@@ -80,19 +80,4 @@ var ex7 = function(x) {
   return x.length > 3 ? Right.of(x) : Left.of("You need > 3");
 }
 
-
-
-// Exercise 8
-// ==========
-// Use ex7 above and Either as a functor to save the user if they are valid or return the error message string. Remember either's two arguments must return the same type.
-
-var save = function(x){
-  return new IO(function(){
-    console.log("SAVED USER!");
-    return x + '-saved';
-  });
-}
-
-var ex8 = _.compose(either(IO.of, save), ex7)
-
-module.exports = {ex1: ex1, ex2: ex2, ex3: ex3, ex4: ex4, ex5: ex5, ex6: ex6, ex7: ex7, ex8: ex8}
+module.exports = {ex1: ex1, ex2: ex2, ex3: ex3, ex4: ex4, ex5: ex5, ex6: ex6, ex7: ex7}

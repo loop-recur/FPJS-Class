@@ -25,7 +25,7 @@ var nameOfFirstCar = _.compose(_.prop('name'), _.head);
 // ============
 // Use the helper function _average to refactor averageDollarValue as a composition
 
-var _average = function(xs) { return reduce(add, 0, xs) / xs.length; }; // <- leave be
+var _average = function(xs) { return _.reduce(add, 0, xs) / xs.length; }; // <- leave be
 
 var averageDollarValue = _.compose(_average, _.map(_.prop('dollar_value')));
 
@@ -34,9 +34,9 @@ var averageDollarValue = _.compose(_average, _.map(_.prop('dollar_value')));
 // ============
 // Write a function: sanitizeNames() using compose that returns a list of lowercase and underscored names: e.g: sanitizeNames(["Hello World"]) //=> ["hello_world"].
 
-var _underscore = replace(/\W+/g, '_'); //<-- leave this alone and use to sanitize
+var _underscore = _.replace(/\W+/g, '_'); //<-- leave this alone and use to sanitize
 
-var sanitizeNames = _.map(_.compose(_underscore, toLowerCase, _.prop('name')));
+var sanitizeNames = _.map(_.compose(_underscore, _.toLower, _.prop('name')));
 
 
 // Bonus 1:
@@ -44,7 +44,7 @@ var sanitizeNames = _.map(_.compose(_underscore, toLowerCase, _.prop('name')));
 // Refactor availablePrices with compose.
 
 var formatPrice = _.compose(accounting.formatMoney, _.prop('dollar_value'));
-var availablePrices = _.compose(join(', '), map(formatPrice), _.filter(_.prop('in_stock')));
+var availablePrices = _.compose(join(', '), _.map(formatPrice), _.filter(_.prop('in_stock')));
 
 // Bonus 2:
 // ============

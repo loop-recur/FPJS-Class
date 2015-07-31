@@ -5,18 +5,18 @@ var _ = require('ramda');
 // Exercise 1
 //==============
 
-var words = split(' ');
+var words = _.split(' ');
 
 // Exercise 1a
 //==============
 
-var sentences = map(words);
+var sentences = _.map(words);
 
 
 // Exercise 2
 //==============
 
-var filterQs = filter(match(/q/i));
+var filterQs = _.filter(_.match(/q/i));
 
 
 // Exercise 3
@@ -25,7 +25,7 @@ var filterQs = filter(match(/q/i));
 
 var _keepHighest = function(x,y){ return x >= y ? x : y; }; // <- leave be
 
-var max = reduce(_keepHighest, 0);
+var max = _.reduce(_keepHighest, 0);
 
 
 // Bonus 1:

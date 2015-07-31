@@ -38,9 +38,4 @@ describe("Functor Exercises", function(){
     assert.deepEqual(Right.of("fpguy99"), E.ex7("fpguy99"));
     assert.deepEqual(Left.of("You need > 3"), E.ex7("..."));
   });
-
-  it('Exercise 8', function(){
-    assert.deepEqual("fpguy99-saved", E.ex8("fpguy99").unsafePerformIO());
-    assert.deepEqual("You need > 3", E.ex8("...").unsafePerformIO());
-  });
 });

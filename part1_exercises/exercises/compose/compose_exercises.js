@@ -29,10 +29,10 @@ var nameOfFirstCar = undefined;
 // Exercise 3:
 // ============
 // Use the helper function _average to refactor averageDollarValue as a composition
-var _average = function(xs) { return reduce(add, 0, xs) / xs.length; }; // <- leave be
+var _average = function(xs) { return _.reduce(add, 0, xs) / xs.length; }; // <- leave be
 
 var averageDollarValue = function(cars) {
-  var dollar_values = map(function(c) { return c.dollar_value; }, cars);
+  var dollar_values = _.map(function(c) { return c.dollar_value; }, cars);
   return _average(dollar_values);
 };
 
@@ -41,7 +41,7 @@ var averageDollarValue = function(cars) {
 // ============
 // Write a function: sanitizeNames() using compose that takes an array of cars and returns a list of lowercase and underscored names: e.g: sanitizeNames([{name: "Ferrari FF"}]) //=> ["ferrari_ff"].
 
-var _underscore = replace(/\W+/g, '_'); //<-- leave this alone and use to sanitize
+var _underscore = _.replace(/\W+/g, '_'); //<-- leave this alone and use to sanitize
 
 var sanitizeNames = undefined;
 
