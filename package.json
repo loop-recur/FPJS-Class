@@ -4,6 +4,7 @@
   "description": "Exercises for Part 2 of the Book",
   "main": "index.js",
   "dependencies": {
+    "accounting": "^0.4.1",
     "chai": "^1.9.1",
     "data.task": "^3.0.0",
     "ramda": "^0.13.0"
@@ -12,7 +13,7 @@
     "mocha": "^1.17.1"
   },
   "scripts": {
-    "test": "mocha exercises/**/*_spec.js"
+    "test": "mocha *exercises/exercises/**/*_spec.js"
   },
   "repository": {
     "type": "git",
